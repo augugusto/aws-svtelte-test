@@ -1,6 +1,7 @@
 <script>
     import { page } from "$app/stores";
     import menu from "./rutas";
+    import UserMenu from "./UserMenu.svelte";
 </script>
 
 <div class="contenedor">
@@ -12,6 +13,9 @@
             <span><a href={item.ruta}>{item.nombre}</a></span>
         {/if}
     {/each}
+    <span style=" margin-left: auto; ">
+        <UserMenu/>
+    </span>
 </div>
 
 <style>
